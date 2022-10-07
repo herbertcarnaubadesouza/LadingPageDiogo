@@ -32,7 +32,8 @@
 .headerMobile {
   background: #101926;
   height: 80px;
-  padding-inline: 5%;
+  margin-left: -15px;
+  padding-right: 1.5rem;
   padding-block: 2.5rem;
   align-items: center;
   display: flex;
@@ -48,3 +49,7 @@
   width: 260px;
   cursor: pointer;
 }
+
+// .hamburger {
+//   padding-right: 2rem;
+// }

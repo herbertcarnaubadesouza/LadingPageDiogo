@@ -40,7 +40,7 @@ const Home: NextPage = () => {
       </header>
       <header className={styles.headerMobile}>
         <img className={styles.logo} src="/images/DiogoLogo.png"></img>
-        <List size={32} weight="bold" />
+        <List size={32} weight="bold" className={styles.hamburger} />
       </header>
     </>
   )
