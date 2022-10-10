@@ -1,0 +1,20 @@
+.headerMobile {
+  background: #101926;
+  height: 80px;
+  margin-left: -15px;
+  padding-right: 1.5rem;
+  padding-block: 2.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.logo {
+  object-fit: cover;
+  width: 260px;
+  cursor: pointer;
+}
