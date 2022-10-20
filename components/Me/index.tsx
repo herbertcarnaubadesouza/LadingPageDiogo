@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './styles.module.scss'
 
 export function Me() {
@@ -17,21 +18,13 @@ export function Me() {
             gerando aproximadamente 350 mil em redução de custos e economia aos
             meus clientes
           </p>
-          {/* <ul className={styles.statsList}>
-            <li>
-              <p className={styles.statsTitle}>9875</p>
-              <p className={styles.statsText}>Satisfied Clients</p>
-            </li>
-            <li>
-              <p className={styles.statsTitle}>7894</p>
-              <p className={styles.statsText}>Project Lunched</p>
-            </li>
-            <li>
-              <p className={styles.statsTitle}>65</p>
-              <p className={styles.statsText}>Years Completed</p>
-            </li>
-          </ul> */}
-          <button>Fale Comigo</button>
+          <Link
+            href="https://api.whatsapp.com/send?phone=5511988239475"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button>Fale Comigo</button>
+          </Link>
         </div>
       </div>
     </section>

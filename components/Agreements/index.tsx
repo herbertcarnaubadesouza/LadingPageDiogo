@@ -11,6 +11,9 @@ import { Autoplay, Navigation, Pagination } from 'swiper'
 export function Agreements() {
   return (
     <section className={styles.container}>
+      <div className={styles.title}>
+        <h2>Parceiro das melhores operadoras e seguradoras do mercado</h2>
+      </div>
       <Swiper
         slidesPerView={4}
         spaceBetween={5}
@@ -55,11 +58,18 @@ export function Agreements() {
           {' '}
           <img src="/images/prevent.png" alt="Corretor de seguros" />
         </SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}>
-          {' '}
-          <img src="/images/prevent.png" alt="Corretor de seguros" />
-        </SwiperSlide>
       </Swiper>
+      <div className={styles.secondTitled}>
+        <h2>
+          Vamos encontrar o melhor plano de saúde de acordo com sua necessidade
+        </h2>
+        <p>
+          Seja para você, sua família ou sua empresa, irei te apresentar a opção
+          com melhor custo-benefício para garantir a maior tranquilidade,
+          segurança e satisfação desde a contratação até a utilização do seu
+          plano de saúde.
+        </p>
+      </div>
     </section>
   )
 }

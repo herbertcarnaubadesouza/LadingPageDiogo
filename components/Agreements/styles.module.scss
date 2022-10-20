@@ -7,6 +7,19 @@
   --swiper-theme-color: #101926;
 }
 
+.title {
+  margin-top: 2rem;
+  padding-inline: 1.5rem;
+  h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 0px;
+    text-align: center;
+    padding-block: 0.5rem;
+    color: #101926;
+  }
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -30,4 +43,25 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.secondTitled {
+  margin-block: 6rem;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1.5rem;
+  gap: 1.5rem;
+  h2 {
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: #101926;
+    margin-block: 0px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 0.015em;
+    color: #101926;
+  }
 }
