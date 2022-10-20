@@ -12,7 +12,6 @@ export function Services() {
     <section className={styles.container}>
       <div className={styles.content}>
         <h2>Meu atendimento</h2>
-        {/* <span className={styles.divisor}></span> */}
         <ul className={styles.serviceList}>
           <li>
             <div className={styles.serviceCard}>

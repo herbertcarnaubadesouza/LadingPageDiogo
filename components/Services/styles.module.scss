@@ -17,6 +17,7 @@
     margin: 0px;
     text-align: center;
     padding-block: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -49,16 +50,12 @@
 }
 
 .cardIcon {
-  // background-image: url(../../public/images/service.png);
   background-repeat: no-repeat;
   background-size: contain;
-  // background-color: hsl(235deg 88% 25% / 7%);
-  // aspect-ratio: 1 / 1;
   max-width: 165px;
   display: grid;
   place-content: center;
   margin-inline: auto;
   transition: 0.15s ease;
-
   color: #101926;
 }
