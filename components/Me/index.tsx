@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-export function MobileHeader() {
+export function Me() {
   return (
     <section className={styles.container}>
       <div className={styles.container}>
