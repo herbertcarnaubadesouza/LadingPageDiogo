@@ -6,7 +6,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 // import required modules
-import { Navigation, Pagination } from 'swiper'
+import { Autoplay, Navigation, Pagination } from 'swiper'
 
 export function Agreements() {
   return (
@@ -14,11 +14,17 @@ export function Agreements() {
       <Swiper
         slidesPerView={4}
         spaceBetween={5}
-        navigation={true}
         loop={true}
-        // centeredSlides={true}
-        pagination={true}
-        modules={[Pagination, Navigation]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        centeredSlides={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
         className={styles.mySwiper}
       >
         <SwiperSlide className={styles.swiperSlide}>
