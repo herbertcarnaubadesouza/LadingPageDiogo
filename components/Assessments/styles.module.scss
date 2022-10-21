@@ -1,0 +1,96 @@
+.container {
+  padding-inline: 1.5rem;
+  color: #101926;
+  --swiper-navigation-size: 30px;
+  h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 0px;
+    text-align: center;
+    padding-block: 0.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .secondTitle {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #101926;
+    margin: 0rem;
+
+    letter-spacing: 0.015em;
+
+    font-weight: 300;
+
+    &:first-child {
+      font-weight: 400;
+    }
+  }
+}
+
+.swiperSlide {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 230px;
+}
+
+.avaliacaoContent {
+  margin-bottom: 2.2rem;
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.4rem;
+  border-radius: 10px;
+  background: #fff;
+  border: 0.8px solid #d8dee0;
+  box-shadow: 0px 9px 20px rgb(0 0 0 / 17%);
+  padding-block: 1.5rem;
+  --swiper-navigation-size: 20px;
+
+  img {
+    max-width: 6rem;
+    object-fit: cover;
+  }
+
+  p {
+    font-size: 0.8rem;
+    text-align: left;
+    color: #101926;
+  }
+}
+
+.swiperFooter {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  img {
+    object-fit: cover;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.clientDescription {
+  display: flex;
+  flex-direction: column;
+
+  h3,
+  p {
+    margin: 0px;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    text-align: left;
+    color: #101926;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+}

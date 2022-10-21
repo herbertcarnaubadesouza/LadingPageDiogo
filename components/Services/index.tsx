@@ -11,7 +11,7 @@ export function Services() {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h2>Meu atendimento</h2>
+        <h2>Veja como funciona meu atendimento!</h2>
         <ul className={styles.serviceList}>
           <li>
             <div className={styles.serviceCard}>
