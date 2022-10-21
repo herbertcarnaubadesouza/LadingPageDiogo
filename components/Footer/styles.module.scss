@@ -1,0 +1,19 @@
+.container {
+  position: absolute;
+  margin: 0;
+  background: #101926;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.container p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color: rgb(110, 110, 110);
+}
+.container span {
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 200;
+}

@@ -3,6 +3,8 @@ import { Agreements } from '../components/Agreements'
 import { Assessments } from '../components/Assessments'
 import { Banner } from '../components/Banner'
 import { Doubts } from '../components/Doubts'
+import { Footer } from '../components/Footer'
+import { Form } from '../components/Form'
 import { Header } from '../components/Header'
 import { Me } from '../components/Me'
 import { Services } from '../components/Services'
@@ -18,6 +20,8 @@ const Home: NextPage = () => {
       <Services />
       <Assessments />
       <Doubts />
+      <Form />
+      <Footer />
       <WhatsApp />
     </>
   )
