@@ -1,9 +1,50 @@
 import { FacebookLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react'
+
 import { useState } from 'react'
+import Select from 'react-select'
 import Typical from 'react-typical'
+import { colourOptions, contactOptions } from './data'
 import styles from './styles.module.scss'
 
 export function Form() {
+  const customStyles = {
+    valueContainer: (provided: any, state: any) => ({
+      ...provided,
+      // textOverflow: 'ellipsis',
+      border: '2px solid rgba(0, 0, 0, 0)',
+      backgroundColor: 'rgba(230, 230, 230, 0.6)',
+      borderRadius: '10px',
+      paddingBlock: '0.2rem',
+      paddingInline: '1rem',
+      boxShadow: 'none',
+      outline: state.isFocused ? 'purple solid 2px' : 'none',
+      outlineOffset: '1px',
+      color: state.isSelected ? 'white' : '#101926',
+      overflow: 'hidden',
+    }),
+    control: (provided: any, state: any) => ({
+      ...provided,
+      border: 'none',
+      boxShadow: 'none',
+      // color: state.isSelected ? 'white' : 'white',
+      borderRadius: '10px',
+      backgroundColor: 'rgba(230, 230, 230, 0.6)',
+      outline: state.isFocused ? ' solid 2px' : 'none',
+    }),
+    option: (provided: any, state: any) => ({
+      ...provided,
+      color: state.isFocused ? 'white' : '#101926',
+      backgroundColor: state.isSelected
+        ? '#101926'
+        : state.isFocused
+        ? '#101926'
+        : 'transparent',
+      ':active': {
+        filter: 'brightness(0.8)',
+      },
+    }),
+  }
+
   const [bool, setBool] = useState(false)
   return (
     <section className={styles.container}>
@@ -35,21 +76,36 @@ export function Form() {
           </div>
           <form /*onSubmit={}*/>
             <p></p>
-            <label htmlFor="name">Nome</label>
+            <label htmlFor="name">Seu nome</label>
             <input
               type="text"
-              /*onChange={handleName}*/ placeholder="Digite seu nome..."
+              /*onChange={handleName}*/ placeholder="Seu Nome"
             />
-
-            <label htmlFor="email">Email</label>
+            <label htmlFor="name">Número de telefone</label>
             <input
-              type="email"
-              /*onChange={handleEmail}*/ placeholder="Digite seu email..."
+              type="text"
+              /*onChange={handleName}*/ placeholder="Seu número de telefone"
             />
-
-            <label htmlFor="message">Deixe uma mensagem</label>
-            <textarea
-              /*onChange={handleMessage}*/ placeholder="Digite uma mensagem..."
+            <div className={styles.selectContainer}>
+              <label htmlFor="CNPJ">Tem acesso a CNPJ?</label>
+              <Select
+                placeholder="---Escolha uma opção---"
+                options={colourOptions}
+                styles={customStyles}
+              />
+            </div>
+            <div className={styles.selectContainer}>
+              <label htmlFor="CNPJ">Melhor forma de contato</label>
+              <Select
+                placeholder="---Escolha uma opção---"
+                options={contactOptions}
+                styles={customStyles}
+              />
+            </div>
+            <label htmlFor="name">E-mail</label>
+            <input
+              type="text"
+              /*onChange={handleName}*/ placeholder="Seu melhor e-mail"
             />
 
             <div className={styles.sendBtn}>
