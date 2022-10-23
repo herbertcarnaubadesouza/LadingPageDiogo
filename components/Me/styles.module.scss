@@ -1,5 +1,5 @@
 .container {
-  padding-block: 2.5rem;
+  padding-block: 1.5rem;
   background: linear-gradient(113.03deg, #010e28 5.44%, #01304a 112.59%);
   max-width: 1440px;
   margin-inline: auto;
@@ -17,7 +17,7 @@
   }
 
   button {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -41,11 +41,11 @@
   h2 {
     font-weight: 500;
     font-size: 1.4rem;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
 
   span {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     &::before {
       content: '';
       position: absolute;
@@ -63,7 +63,7 @@
 }
 
 .statsList {
-  padding-block: 1.7rem;
+  padding-block: 1.5rem;
   display: grid;
   gap: 30px;
   padding-inline: 10px;

@@ -3,7 +3,6 @@
   margin: 0;
   background: #101926;
   width: 100vw;
-  padding: 20px 0;
   text-align: center;
 }
 .container p {
@@ -16,4 +15,24 @@
   color: whitesmoke;
   text-transform: uppercase;
   font-weight: 200;
+}
+
+.firstFooter {
+  background: #142132;
+  padding-block: 1.5rem;
+  text-align: left;
+  padding-inline: 1.5rem;
+}
+
+.informationDetails {
+  h3 {
+    color: #fff;
+  }
+  p {
+    color: rgb(225, 225, 225);
+  }
+}
+
+.footerEnd {
+  padding-block: 8px;
 }

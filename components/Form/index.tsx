@@ -2,7 +2,6 @@ import { FacebookLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react'
 
 import { useState } from 'react'
 import Select from 'react-select'
-import Typical from 'react-typical'
 import { colourOptions, contactOptions } from './data'
 import styles from './styles.module.scss'
 
@@ -10,7 +9,6 @@ export function Form() {
   const customStyles = {
     valueContainer: (provided: any, state: any) => ({
       ...provided,
-      // textOverflow: 'ellipsis',
       border: '2px solid rgba(0, 0, 0, 0)',
       backgroundColor: 'rgba(230, 230, 230, 0.6)',
       borderRadius: '10px',
@@ -26,7 +24,6 @@ export function Form() {
       ...provided,
       border: 'none',
       boxShadow: 'none',
-      // color: state.isSelected ? 'white' : 'white',
       borderRadius: '10px',
       backgroundColor: 'rgba(230, 230, 230, 0.6)',
       outline: state.isFocused ? ' solid 2px' : 'none',
@@ -55,17 +52,18 @@ export function Form() {
       <div className={styles.centralForm}>
         <div className={styles.col}>
           <h2 className={styles.title}>
-            <Typical loop={Infinity} steps={['Entre em contato 📧', 1000]} />
+            Entre em contato
+            {/* <Typical loop={Infinity} steps={['Entre em contato 📧', 1000]} /> */}
           </h2>
           <div className={styles.icons}>
-            <a href="https://web.facebook.com/?_rdc=1&_rdr">
-              <InstagramLogo size={20} color="#fff" weight="bold" />
+            <a href="https://www.instagram.com/corretordiogosantos/">
+              <InstagramLogo size={25} color="#fff" weight="bold" />
             </a>
-            <a href="https://github.com/herbertcarnaubadesouza">
-              <FacebookLogo size={20} color="#fff" weight="bold" />
+            <a href="https://www.facebook.com/corretordiogosantos">
+              <FacebookLogo size={25} color="#fff" weight="bold" />
             </a>
             <a href="https://www.instagram.com/herbert_souza/">
-              <LinkedinLogo size={20} color="#fff" weight="bold" />
+              <LinkedinLogo size={25} color="#fff" weight="bold" />
             </a>
           </div>
         </div>

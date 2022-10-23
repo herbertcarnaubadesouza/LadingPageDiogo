@@ -87,13 +87,13 @@
 }
 
 .title {
-  margin-inline: 12px;
+  // margin-inline: 12px;
 }
 
 .icons {
   display: flex;
-  gap: 7px;
-  margin-inline: 12px;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .main-container {
@@ -189,6 +189,6 @@
   }
   .backForm .imgBack img {
     width: 100%;
-    opacity: 0.2 !important;
+    // opacity: 0.2 !important;
   }
 }
